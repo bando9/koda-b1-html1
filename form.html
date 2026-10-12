@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smoker Survey</title>
+  </head>
+  <body>
+    <form method="get">
+      <div>
+        <label for="name" placeholder="John Doe">Siapa nama Anda? </label
+        ><input type="text" id="name" name="name" />
+      </div>
+      <div>
+        <label for="age" placeholder="17">Berapa umur Anda? </label
+        ><input type="number" id="age" name="age" />
+      </div>
+      <div>
+        <legend>Apa jenis kelamin Anda?</legend>
+        <div>
+          <input type="radio" id="man" name="gender" />
+          <label for="man">Laki-laki</label>
+        </div>
+        <div>
+          <input type="radio" id="woman" name="gender" />
+          <label for="woman">Perempuan</label>
+        </div>
+      </div>
+      <div>
+        <legend>Apakah anda perokok?</legend>
+        <div>
+          <input type="radio" />
+          <label for="yessmoker">Ya</label>
+        </div>
+        <div>
+          <input type="radio" />
+          <label for="nosmoker" id="smoker">Tidak</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="smoke-select"
+          >Jika Anda perokok, rokok apa yang pernah Anda coba?
+        </label>
+        <br />
+        <select name="smoke" id="smoke-select">
+          <option>Pilih rokok:</option>
+          <option value="gg">Gudang garam</option>
+          <option value="malboro">Marlboro</option>
+          <option value="la">LA</option>
+          <option value="esse">Esse</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
