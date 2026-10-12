@@ -29,27 +29,37 @@
       <div>
         <legend>Apakah anda perokok?</legend>
         <div>
-          <input type="radio" />
+          <input type="radio" id="yessmoker" name="smoker" />
           <label for="yessmoker">Ya</label>
         </div>
         <div>
-          <input type="radio" />
-          <label for="nosmoker" id="smoker">Tidak</label>
+          <input type="radio" name="smoker" id="nosmoker" />
+          <label for="nosmoker">Tidak</label>
         </div>
       </div>
 
       <div>
-        <label for="smoke-select"
-          >Jika Anda perokok, rokok apa yang pernah Anda coba?
-        </label>
-        <br />
-        <select name="smoke" id="smoke-select">
-          <option>Pilih rokok:</option>
-          <option value="gg">Gudang garam</option>
-          <option value="malboro">Marlboro</option>
-          <option value="la">LA</option>
-          <option value="esse">Esse</option>
-        </select>
+        <label>Jika Anda perokok, rokok apa yang pernah Anda coba?</label>
+
+        <div>
+          <input type="checkbox" id="gg" name="gg" checked />
+          <label for="gg">Gudang Garam</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="marlboro" name="marlboro" />
+          <label for="marlboro">Marlboro</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="sampoerna" name="sampoerna" />
+          <label for="sampoerna">Sampoerna</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="esse" name="esse" />
+          <label for="esse">Esse</label>
+        </div>
       </div>
       <button type="submit">Submit</button>
     </form>
